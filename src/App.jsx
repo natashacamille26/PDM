@@ -1,40 +1,46 @@
 import "./App.css";
-import { c as _c } from "react/compiler-runtime";
 
 function App() {
   return (
-    <>
+    <div className="container">
       <header className="hero">
-        <nav>
-          <h1>ParishFund</h1>
-          <button>Apply</button>
+        <nav className="nav">
+          <h1 className="logo">Parish Development Model</h1>
         </nav>
 
         <div className="hero-content">
-          <h2>Empowering Parish Communities</h2>
+          <h2>Empowering Communities Through Accessible Funding</h2>
           <p>
-            Helping individuals access funding, receive guidance, and grow
-            sustainable livelihoods.
+            A digital platform helping parishes access, manage, and grow
+            development funds efficiently and transparently.
           </p>
-          <button>Get Started</button>
+
+          <button
+  className="cta-btn"
+  onClick={() => window.scrollTo({ top: 600, behavior: "smooth" })}
+>
+  Get Started
+</button>
         </div>
       </header>
 
       <section className="features">
-        <h2>How It Works</h2>
-        <div className="grid">
-          <div className="card">Apply</div>
-          <div className="card">Assessment</div>
-          <div className="card">Funding</div>
-          <div className="card">Guidance</div>
+        <div className="card">
+          <h3>Access Funding</h3>
+          <p>Apply for parish development funds easily.</p>
+        </div>
+
+        <div className="card">
+          <h3>Track Progress</h3>
+          <p>Monitor how funds are used in real-time.</p>
+        </div>
+
+        <div className="card">
+          <h3>Community Growth</h3>
+          <p>Support local initiatives and businesses.</p>
         </div>
       </section>
-
-      <section className="cta">
-        <h2>Start Your Application</h2>
-        <button>Apply Now</button>
-      </section>
-    </>
+    </div>
   );
 }
 
