@@ -3,56 +3,47 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* HERO */
 .hero {
+  height: 100vh;
   background: linear-gradient(to right, #0a3d2f, #145c43);
   color: white;
-  padding: 60px 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo {
-  font-size: 20px;
-}
-
-.hero-content h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.hero-content p {
-  max-width: 500px;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-/* 🔥 BUTTON MAGIC */
+/* BUTTON */
 .cta-btn {
   background-color: #ffcc00;
   color: black;
   padding: 12px 25px;
-  font-size: 16px;
   border: none;
   border-radius: 8px;
+  margin-top: 15px;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
-.cta-btn:hover {
-  background-color: #ffaa00;
-  transform: scale(1.05);
-}
-
-/* FEATURES */
-.features {
+/* AUTH PAGES */
+.auth-container {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 20px;
-  padding: 40px;
+  align-items: center;
+  gap: 15px;
 }
 
-.card {
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
-  width: 200px;
+.auth-container input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.link {
+  color: #145c43;
+  cursor: pointer;
+  font-weight: bold;
 }
