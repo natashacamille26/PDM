@@ -12,11 +12,19 @@ function Signup() {
       <input type="email" placeholder="Email" />
       <input type="password" placeholder="Password" />
 
-      <button className="cta-btn">Sign Up</button>
+      <button
+        className="cta-btn"
+        onClick={() => {
+          localStorage.setItem("auth", "true");
+          navigate("/dashboard");
+        }}
+      >
+        Sign Up
+      </button>
 
       <p>
         Already have an account?{" "}
-        <span onClick={() => navigate("/login")} className="link">
+        <span className="link" onClick={() => navigate("/login")}>
           Login
         </span>
       </p>
