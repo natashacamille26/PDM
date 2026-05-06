@@ -109,3 +109,8 @@ body {
   border: none;
   cursor: pointer;
 }
+
+.error {
+  color: red;
+  font-size: 14px;
+}
