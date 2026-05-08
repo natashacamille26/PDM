@@ -30,6 +30,7 @@ function Login() {
     }
 
     localStorage.setItem("auth", "true");
+    localStorage.setItem("currentUser", JSON.stringify(storedUser));
     navigate("/dashboard");
   };
 

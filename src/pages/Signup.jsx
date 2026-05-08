@@ -22,6 +22,7 @@ function Signup() {
     // Save user
     localStorage.setItem("user", JSON.stringify(form));
     localStorage.setItem("auth", "true");
+    localStorage.setItem("currentUser", JSON.stringify(form));
 
     navigate("/dashboard");
   };
