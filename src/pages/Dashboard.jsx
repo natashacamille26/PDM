@@ -5,6 +5,7 @@ function Dashboard() {
 
   const logout = () => {
     localStorage.removeItem("auth");
+    localStorage.removeItem("currentUser");
     navigate("/");
   };
 

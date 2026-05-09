@@ -9,28 +9,33 @@ function Login() {
   const [error, setError] = useState("");
 
   const handleLogin = () => {
-    const storedUser = JSON.parse(localStorage.getItem("user"));
+    const users =
+      JSON.parse(localStorage.getItem("users")) || [];
+
+    const matchedUser = users.find(
+      (user) =>
+        user.email === email &&
+        user.password === password
+    );
 
     if (!email || !password) {
       setError("Please enter email and password");
       return;
     }
 
-    if (!storedUser) {
-      setError("No account found. Please sign up first.");
-      return;
-    }
-
-    if (
-      email !== storedUser.email ||
-      password !== storedUser.password
-    ) {
+    if (!matchedUser) {
       setError("Invalid email or password");
       return;
     }
 
+    /* LOGIN */
     localStorage.setItem("auth", "true");
-    localStorage.setItem("currentUser", JSON.stringify(storedUser));
+
+    localStorage.setItem(
+      "currentUser",
+      JSON.stringify(matchedUser)
+    );
+
     navigate("/dashboard");
   };
 
@@ -60,7 +65,10 @@ function Login() {
 
       <p>
         Don’t have an account?{" "}
-        <span className="link" onClick={() => navigate("/signup")}>
+        <span
+          className="link"
+          onClick={() => navigate("/signup")}
+        >
           Sign up
         </span>
       </p>
