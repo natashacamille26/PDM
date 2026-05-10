@@ -14,17 +14,18 @@ function Applications() {
 
   /* LOAD USER APPLICATIONS */
   useEffect(() => {
-    const storedApps =
+    const allApplications =
       JSON.parse(localStorage.getItem("applications")) || [];
 
-    const userApps = storedApps.filter(
-      (app) => app.userEmail === currentUser.email
+    const userApplications = allApplications.filter(
+      (app) =>
+        app.userEmail === currentUser.email
     );
 
-    setApplications(userApps);
-  }, []);
+    setApplications(userApplications);
+  }, [currentUser.email]);
 
-  /* SUBMIT APPLICATION */
+  /* SUBMIT */
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -34,28 +35,38 @@ function Applications() {
 
     const newApplication = {
       id: Date.now(),
-      userEmail: currentUser.email,
       applicantName: currentUser.name,
+      userEmail: currentUser.email,
       amount: form.amount,
       purpose: form.purpose,
       status: "Pending",
     };
 
-    const storedApps =
+    /* GET ALL APPS */
+    const allApplications =
       JSON.parse(localStorage.getItem("applications")) || [];
 
-    const updatedApps = [...storedApps, newApplication];
+    /* ADD NEW */
+    const updatedApplications = [
+      ...allApplications,
+      newApplication,
+    ];
 
+    /* SAVE */
     localStorage.setItem(
       "applications",
-      JSON.stringify(updatedApps)
+      JSON.stringify(updatedApplications)
     );
 
-    setApplications([
-      ...applications,
-      newApplication,
-    ]);
+    /* SHOW ONLY CURRENT USER APPS */
+    const userApplications = updatedApplications.filter(
+      (app) =>
+        app.userEmail === currentUser.email
+    );
 
+    setApplications(userApplications);
+
+    /* RESET FORM */
     setForm({
       amount: "",
       purpose: "",
@@ -66,11 +77,10 @@ function Applications() {
     <div className="applications-page">
       <h2>Funding Applications</h2>
 
-      {/* FORM */}
       <form className="form" onSubmit={handleSubmit}>
         <input
           type="number"
-          placeholder="Amount Needed (UGX)"
+          placeholder="Amount Needed"
           value={form.amount}
           onChange={(e) =>
             setForm({
@@ -81,7 +91,7 @@ function Applications() {
         />
 
         <textarea
-          placeholder="Purpose of funding"
+          placeholder="Purpose"
           value={form.purpose}
           onChange={(e) =>
             setForm({
@@ -96,12 +106,11 @@ function Applications() {
         </button>
       </form>
 
-      {/* APPLICATION LIST */}
       <div className="applications-list">
         <h3>Your Applications</h3>
 
         {applications.length === 0 ? (
-          <p>No applications submitted yet.</p>
+          <p>No applications yet.</p>
         ) : (
           applications.map((app) => (
             <div className="card" key={app.id}>
