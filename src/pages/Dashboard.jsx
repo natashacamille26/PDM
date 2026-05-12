@@ -123,7 +123,7 @@ function Dashboard() {
           ) : (
             applications.map((app) => (
               <p key={app.id}>
-                ✔ Requested UGX {app.amount}
+                ✔ UGX {app.amount} — {app.status}
               </p>
             ))
           )}
