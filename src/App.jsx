@@ -7,6 +7,7 @@ import Dashboard from "./pages/Dashboard";
 import Auth from "./pages/Auth";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Admin from "./pages/Admin";
+import Applications from "./pages/Applications";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -33,6 +34,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/applications" element={ <ProtectedRoute>
+      <Applications />
+    </ProtectedRoute>} />
 
         <Route
           path="/dashboard"
