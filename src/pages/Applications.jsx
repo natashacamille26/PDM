@@ -80,7 +80,12 @@ function Applications() {
     <div className="applications-page">
       <h2>Funding Applications</h2>
 
-      
+          <div className="page-header">
+            <h2>Apply for Parish Funding</h2>
+            <p>
+              Submit your project details for review under the Parish Development Model.
+            </p>
+          </div>
 
       <form className="form" onSubmit={handleSubmit}>
         <input
