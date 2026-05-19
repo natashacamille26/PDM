@@ -49,14 +49,33 @@ body {
 /* DASHBOARD */
 .dashboard-layout {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
+  background: #f5f7fa;
+  font-family: Arial, sans-serif;
 }
 
 .sidebar {
-  width: 220px;
-  background: #0a3d2f;
+  width: 240px;
+  background: linear-gradient(180deg, #0b5e2b, #08461f);
   color: white;
-  padding: 20px;
+  padding: 25px 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .dashboard-main {

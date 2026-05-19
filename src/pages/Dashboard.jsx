@@ -42,7 +42,10 @@ function Dashboard() {
   return (
     <div className="dashboard-layout">
       <aside className="sidebar">
-        <h2>Parish Dvelopment Model</h2>
+        <h2>Parish Development Model</h2>
+          <p style={{ fontSize: "13px", opacity: 0.8 }}>
+            Empowering communities
+          </p>
 
         <ul>
           <li>Dashboard</li>
