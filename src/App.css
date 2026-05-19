@@ -78,6 +78,10 @@ body {
   cursor: pointer;
 }
 
+.sidebar li:hover {
+  background: rgba(255,255,255,0.15);
+}
+
 .dashboard-main {
   flex: 1;
   padding: 30px;
