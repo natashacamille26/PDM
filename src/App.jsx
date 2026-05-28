@@ -9,6 +9,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Admin from "./pages/Admin";
 import Applications from "./pages/Applications";
 import { useNavigate } from "react-router-dom";
+import AdminApplications from "./pages/AdminApplications";
 
 function Home() {
   const navigate = useNavigate();
@@ -46,6 +47,7 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route path="/admin/applications" element={<AdminApplications />} />
       </Routes>
     </Router>
   );
