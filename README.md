@@ -1,4 +1,5 @@
-Parish Development Model (PDM)
+# Parish Development Model (PDM)
+
 📌 Overview
 
 The Parish Development Model (PDM) is a digital platform designed to streamline community development funding within parishes. It enables citizens to apply for funding, allows administrators to review applications, and supports transparent approval and tracking of development projects.
