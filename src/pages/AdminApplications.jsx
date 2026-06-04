@@ -1,39 +1,38 @@
-import {c as _c} from "react/compiler-runtime";
 import applications from "../data/applications";
 
+const currentUser = {
+  id: 999,
+  role: "admin",
+};
+
 export default function AdminApplications() {
+  if (currentUser.role !== "admin") {
+    return <h1>Access Denied</h1>;
+  }
+
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold mb-6">
-        All Applications
+      <h1 className="text-2xl font-bold mb-4">
+        All Applications (Admin)
       </h1>
 
-      <div className="grid gap-4">
-        {applications.map((app) => (
-          <div
-            key={app.id}
-            className="bg-white shadow rounded-xl p-4"
-          >
-            <h2 className="font-bold text-xl">
-              {app.applicant}
-            </h2>
+      {applications.map((app) => (
+        <div key={app.id} className="bg-white p-4 shadow rounded mb-3">
+          <h2>{app.applicant}</h2>
+          <p>{app.parish}</p>
+          <p>{app.amount}</p>
+          <p>{app.status}</p>
 
-            <p>Parish: {app.parish}</p>
-            <p>Amount: {app.amount}</p>
-            <p>Status: {app.status}</p>
-
-            <div className="mt-4 flex gap-2">
-              <button className="bg-green-600 text-white px-4 py-2 rounded">
-                Approve
-              </button>
-
-              <button className="bg-red-600 text-white px-4 py-2 rounded">
-                Reject
-              </button>
-            </div>
+          <div className="mt-3 flex gap-2">
+            <button className="bg-green-600 text-white px-3 py-1 rounded">
+              Approve
+            </button>
+            <button className="bg-red-600 text-white px-3 py-1 rounded">
+              Reject
+            </button>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }
