@@ -1,3 +1,11 @@
+Parish Development Model (PDM)
+📌 Overview
+
+The Parish Development Model (PDM) is a digital platform designed to streamline community development funding within parishes. It enables citizens to apply for funding, allows administrators to review applications, and supports transparent approval and tracking of development projects.
+
+The goal is to improve accessibility, accountability, and efficiency in local development funding systems.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
