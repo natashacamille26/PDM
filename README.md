@@ -6,22 +6,29 @@ The Parish Development Model (PDM) is a digital platform designed to streamline 
 
 The goal is to improve accessibility, accountability, and efficiency in local development funding systems.
 
+🚀 Features
+👤 User Features
+User registration and authentication
+Submit development funding applications
+View application status (Pending, Approved, Rejected)
+Personal user dashboard
 
+🛠️ Admin Features
+View all submitted applications
+Approve or reject applications
+Track user submissions per parish
+Manage application workflow
+
+📊 System Features
+Role-based access (User / Admin)
+Application tracking system
+Structured approval workflow
+Responsive UI (Vite + React)
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧰 Tech Stack
+React (Vite)
+JavaScript (ES6+)
+Node.js (if backend is added)
+Firebase / Backend API (optional depending on setup)
+CSS / Tailwind (if used)
