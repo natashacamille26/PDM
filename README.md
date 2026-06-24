@@ -1,34 +1,83 @@
-# Parish Development Model (PDM)
+# 🇺🇬 Parish Development Model (PDM)
 
-📌 Overview
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-Latest-purple?logo=vite)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-Proprietary-red)
 
-The Parish Development Model (PDM) is a digital platform designed to streamline community development funding within parishes. It enables citizens to apply for funding, allows administrators to review applications, and supports transparent approval and tracking of development projects.
+A modern digital platform designed to support the Parish Development Model (PDM) by streamlining funding applications, approvals, and project 
+monitoring at the parish level.
 
-The goal is to improve accessibility, accountability, and efficiency in local development funding systems.
+---
 
-🚀 Features
-👤 User Features
-User registration and authentication
-Submit development funding applications
-View application status (Pending, Approved, Rejected)
-Personal user dashboard
+## 📖 Overview
 
-🛠️ Admin Features
-View all submitted applications
-Approve or reject applications
-Track user submissions per parish
-Manage application workflow
+The Parish Development Model (PDM) platform empowers citizens, community groups, and administrators by digitizing the funding application process.
 
-📊 System Features
-Role-based access (User / Admin)
-Application tracking system
-Structured approval workflow
-Responsive UI (Vite + React)
-# React + Vite
+The system provides:
 
-🧰 Tech Stack
-React (Vite)
-JavaScript (ES6+)
-Node.js (if backend is added)
-Firebase / Backend API (optional depending on setup)
-CSS / Tailwind (if used)
+- Online funding applications
+- Application tracking
+- Administrative approval workflows
+- Transparency in fund allocation
+- Real-time monitoring and reporting
+
+The platform aims to improve service delivery and accountability while reducing paperwork and delays.
+
+---
+
+## ✨ Key Features
+
+### 👤 Applicant Portal
+
+- User registration and login
+- Submit funding applications
+- View application status
+- Track approval progress
+- Access application history
+
+### 🛠️ Administrative Portal
+
+- Review submitted applications
+- Approve or reject requests
+- Manage applicants
+- Monitor funding requests
+- View application statistics
+
+### 📊 Dashboard
+
+- Application metrics
+- Funding summaries
+- Approval trends
+- User activity monitoring
+
+### 🤖 Planned AI Features
+
+- Application quality assessment
+- Fraud detection assistance
+- AI-powered recommendations
+- Smart application categorization
+
+---
+
+## 🏗️ System Architecture
+
+```text
+Applicants
+    │
+    ▼
+User Dashboard
+    │
+    ▼
+Application Submission
+    │
+    ▼
+Admin Review Panel
+    │
+ ┌──┴──┐
+ ▼     ▼
+Approve Reject
+ │
+ ▼
+Funding Process
