@@ -63,7 +63,6 @@ The platform aims to improve service delivery and accountability while reducing 
 
 ## 🏗️ System Architecture
 
-```text
 Applicants
     │
     ▼
@@ -81,3 +80,17 @@ Approve Reject
  │
  ▼
 Funding Process
+
+## 🛠 Technology Stack
+
+| Technology            | Purpose                 |
+| --------------------- | ----------------------- |
+| React                 | Frontend Framework      |
+| Vite                  | Development Environment |
+| JavaScript            | Application Logic       |
+| CSS                   | Styling                 |
+| Firebase (Planned)    | Backend Services        |
+| AI Services (Planned) | Intelligent Reviews     |
+
+## 📁 Project Structure
+
