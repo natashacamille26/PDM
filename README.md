@@ -62,7 +62,7 @@ The platform aims to improve service delivery and accountability while reducing 
 ---
 
 ## 🏗️ System Architecture
-
+```text
 Applicants
     │
     ▼
@@ -80,6 +80,7 @@ Approve Reject
  │
  ▼
 Funding Process
+```
 
 ## 🛠 Technology Stack
 
