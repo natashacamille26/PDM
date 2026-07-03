@@ -95,3 +95,28 @@ Funding Process
 
 ## 📁 Project Structure
 
+src/
+│
+├── components/
+│   ├── Navbar
+│   ├── Sidebar
+│   └── Cards
+│
+├── pages/
+│   ├── Home
+│   ├── Dashboard
+│   ├── Applications
+│   └── Admin
+│
+├── data/
+│
+├── assets/
+│
+├── App.jsx
+│
+└── main.jsx
+
+🚀 Getting Started
+Prerequisites
+Node.js 20+
+npm
