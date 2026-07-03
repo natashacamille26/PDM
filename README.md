@@ -94,7 +94,7 @@ Funding Process
 | AI Services (Planned) | Intelligent Reviews     |
 
 ## 📁 Project Structure
-
+```Text
 src/
 │
 ├── components/
@@ -115,7 +115,7 @@ src/
 ├── App.jsx
 │
 └── main.jsx
-
+```
 🚀 Getting Started
 
 Prerequisites
