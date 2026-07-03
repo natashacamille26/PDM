@@ -117,6 +117,9 @@ src/
 └── main.jsx
 
 🚀 Getting Started
+
 Prerequisites
+
 Node.js 20+
+
 npm
