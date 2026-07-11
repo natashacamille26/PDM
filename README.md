@@ -128,13 +128,24 @@ Installation
 Clone the repository:
 
 </> Bash
+
 git clone https://github.com/natashacamille26/PDM.git
 
 Navigate to project:
+
 </> Bash 
+
 cd pdm-project
 
 Install dependencies:
+
 </> Bash
-npm install#
+
+npm install
+
+Start the development server
+
+</> Bash
+
+npm run dev
 
