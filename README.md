@@ -149,3 +149,10 @@ Start the development server
 
 npm run dev
 
+🔄 Application Workflow
+1. User creates an account
+2. User submits an application
+3. Application enters review queue
+4. Administrator evaluates request
+5. Application is approved or rejected
+6. User receives updated status
