@@ -156,3 +156,10 @@ npm run dev
 4. Administrator evaluates request
 5. Application is approved or rejected
 6. User receives updated status
+
+🎯 Roadmap
+Phase 1
+ Landing page
+ User dashboard
+ Application submission
+ Admin dashboard
