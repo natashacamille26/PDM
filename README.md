@@ -158,8 +158,13 @@ npm run dev
 6. User receives updated status
 
 🎯 Roadmap
+
 Phase 1
+
 &#x2611; Landing page
- User dashboard
- Application submission
- Admin dashboard
+
+&#x2611; User dashboard
+
+&#x2611; Application submission
+
+&#x2611; Admin dashboard
