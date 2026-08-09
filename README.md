@@ -159,7 +159,7 @@ npm run dev
 
 🎯 Roadmap
 Phase 1
- Landing page
+&#x2611; Landing page
  User dashboard
  Application submission
  Admin dashboard
