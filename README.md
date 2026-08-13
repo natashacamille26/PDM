@@ -168,3 +168,14 @@ Phase 1
 &#x2611; Application submission
 
 &#x2611; Admin dashboard
+
+
+
+
+📜 License
+
+Copyright © 2026.
+
+All rights reserved.
+
+This software and its source code may not be copied, modified, distributed, or used without explicit permission from the author.
